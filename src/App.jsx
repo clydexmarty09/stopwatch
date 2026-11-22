@@ -34,7 +34,16 @@ export default function App() {
 
   useEffect(()=> {
     return ()=> clearInterval(timerRef.current); 
-  }, []); 
+  }, []);
+  
+  // for testing 
+  useEffect(()=> {
+    console.log("Effect running"); 
+
+    return()=> {
+      console.log("Cleanup running"); 
+    }; 
+  },[time]); 
 
   return(
 

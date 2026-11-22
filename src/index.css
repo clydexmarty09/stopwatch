@@ -20,6 +20,6 @@
 
 @layer components {
   .button {
-    @apply border text-lg text-black border-zinc-800 rounded-lg py-1 px-2 mt-4 
+    @apply hover:scale-110 transition active:scale-100 text-lg text-black border-zinc-800 rounded-lg py-1 px-2 mt-4 
   }
 }
